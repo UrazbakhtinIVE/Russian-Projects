@@ -25,9 +25,10 @@ body{
  }
 
 .container{
-    max-width: 1100px;
+    /* max-width: 1100px; */
+    max-width: 1126px ;
+  
     margin: 0 auto;
-    background-color: rgb(206, 235, 235);
 }
 
 /* Стили для текста */
