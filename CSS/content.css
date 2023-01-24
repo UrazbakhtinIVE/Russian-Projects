@@ -56,7 +56,6 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
- 
 }
 .about__project__item {
   min-width: 350px;
@@ -87,27 +86,25 @@
   color: var(--gray-color);
 }
 
-
-
 /* Лента 1 */
-.request{
+.request {
   padding-top: 30px;
   padding-bottom: 40px;
-    margin-top: 150px;
-    background-color: var(--accent-color);
+  margin-top: 150px;
+  background-color: var(--accent-color);
 }
 
-.request_flex{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.request_flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.request__flex-left{
-  color:var(--white-color); 
+.request__flex-left {
+  color: var(--white-color);
 }
 
-.request__title{
+.request__title {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 48px;
@@ -116,7 +113,7 @@
   margin-bottom: 7px;
 }
 
-.request__sub__title{
+.request__sub__title {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 24px;
@@ -124,55 +121,52 @@
   letter-spacing: 0.02em;
 }
 
-.request_btn{
+.request_btn {
   margin-top: 20px;
   display: flex;
   align-items: center;
-  font-family: 'Oswald';
+  font-family: "Oswald";
   font-weight: 500;
   font-size: 14px;
   line-height: 21px;
   letter-spacing: 0.05em;
   padding: 14px 30px;
 }
-.mail-icon{
+.mail-icon {
   margin-right: 15px;
 }
-
 
 /* Чем мы занимаемся */
 
 .about__info {
   margin-top: 150px;
- 
- }
- .title__about-ifo {
-   text-align: center;
-   margin-bottom: 66px;
-   font-weight: 500;
-   font-size: 36px;
-   line-height: 53px;
-   text-transform: uppercase;
- }
- .about__info__grid {
-   display: grid;
-   justify-items: center;
-   align-items: center;
-   grid-template-columns: repeat(3, 1fr);
-   grid-template-rows: repeat(2, 1fr);
-   gap:30px;
- }
+}
+.title__about-ifo {
+  text-align: center;
+  margin-bottom: 66px;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 53px;
+  text-transform: uppercase;
+}
+.about__info__grid {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 30px;
+}
 
- .about__info__grid-item {
+.about__info__grid-item {
   padding: 59px 0;
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
   width: 350px;
-
- }
- .build-icon {
+}
+.build-icon {
   margin: 0 auto 30px;
- }
- .sub__title__about__info {
+}
+.sub__title__about__info {
   margin: 0 auto;
   max-width: 184px;
   font-size: 21px;
@@ -180,14 +174,7 @@
   letter-spacing: 0.02em;
   text-transform: uppercase;
   text-align: center;
- }
- 
-
-
-
-
-
-
+}
 
 @media screen and (max-width: 1280px) {
   .about__grid {
@@ -198,8 +185,8 @@
     padding: 450px 15px 110px 15px;
   }
 
-  .request{
-    padding-left: 15px;  
+  .request {
+    padding-left: 15px;
     padding-right: 15px;
   }
 
@@ -207,13 +194,13 @@
     padding-left: 15px;
     padding-right: 15px;
   }
-  .about__info__grid{
+  .about__info__grid {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
   }
 
-  .about__info__grid-item{
-      width: 100%;
+  .about__info__grid-item {
+    width: 100%;
   }
 }
 
@@ -243,20 +230,17 @@
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .request_flex{
+  .request_flex {
     flex-wrap: wrap;
   }
-  .about__info__grid{
+  .about__info__grid {
     grid-template-columns: repeat(1, 1fr);
   }
-
 }
 
 @media screen and (max-width: 380px) {
-  h1{
+  h1 {
     font-size: 46px;
     line-height: 64;
   }
 }
-
-
