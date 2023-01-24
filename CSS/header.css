@@ -18,9 +18,9 @@
 .logo{
     width: 60px;
     height: 60px;
-    margin-left: 16px;
 }
 .burger {
+    
     padding: 0;
     cursor: pointer;
     display: flex;
@@ -45,7 +45,8 @@
     margin-bottom: 0;
 }
 .header__main__title {
-    margin: 0 auto 17px;
+    padding-left: 2px;
+    margin: 0 auto 16px;
     max-width: 734px;
     font-weight: 500;
     font-size: 62px;
@@ -54,6 +55,7 @@
     letter-spacing: 0.02em;
     text-transform: uppercase;
     color: var(--white-color);
+    
 }
 .header__text { 
     margin: 0 auto 17px;
@@ -64,4 +66,21 @@
     text-align: center;
     text-transform: uppercase;
     color: var(--white-color);
+}
+
+.about__project-flex{
+    max-width: 350px;
+  
+}
+
+.project__title_h2{
+    margin-bottom: 60px;
+}
+
+.photo_projects{
+    width: 100%;
+}
+
+.regtangel{
+
 }
