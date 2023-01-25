@@ -88,6 +88,7 @@
 
 /* Лента 1 */
 .request {
+  margin-bottom: 150px;
   padding-top: 30px;
   padding-bottom: 40px;
   margin-top: 150px;
@@ -139,9 +140,9 @@
 /* Чем мы занимаемся */
 
 .about__info {
-  margin-top: 150px;
+  margin-bottom: 150px;
 }
-.title__about-ifo {
+.title__h2 {
   text-align: center;
   margin-bottom: 66px;
   font-weight: 500;
@@ -176,6 +177,104 @@
   text-align: center;
 }
 
+
+/* Portfolio section */
+.portfolio {
+  margin-bottom: 150px;
+}
+.portfolio-grid {
+   display: grid;
+   grid-template-columns: repeat(5, 1fr); 
+}
+.portfolio-gid-item {
+ 
+}
+.photo__portfolio {
+  padding: 0;
+  margin: 0;
+}
+
+
+/*  section question */
+
+.question {
+  padding-top: 150px;
+  padding-bottom: 110px;
+  margin-bottom: 150px;
+}
+
+.question__items {
+}
+.question-item {
+}
+
+.question__text-h3 {
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  color:var(--accent-color); 
+}
+
+
+.question__text-h3.clouse{
+  margin-bottom: 31px;
+}
+
+
+.question__text-h3.open::before,
+.question__text-h3.clouse::before{
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-image: url(..//img/triangle.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 14px;
+}
+.question__text-h3.open::before{
+  transform: rotate(-90deg);
+}
+.text-p {
+}
+.question__text-p {
+  max-width: 730px;
+  margin-bottom: 40px;
+  color: var(--gray-color);
+}
+
+.question__text-h3.clouse+ .question__text-p{
+  display: none;
+}
+
+
+/* section partners */
+
+.partners {
+  background-color: #404149;
+  color:#FFFF;
+  text-align: center;
+  margin-bottom: 250px;
+}
+
+.partners-grid{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.partners__text-h3 {
+  padding-top: 100px;
+  margin-bottom: 60px;
+
+}
+.img__partners {
+  margin-bottom: 100px;
+}
+
+
+
+
+
+
 @media screen and (max-width: 1280px) {
   .about__grid {
     grid-template-columns: repeat(2, 1fr);
@@ -202,16 +301,19 @@
   .about__info__grid-item {
     width: 100%;
   }
-}
 
-@media screen and (max-width: 960px) {
-  .about__grid {
-    grid-template-columns: repeat(2, 1fr);
+
+
+  /* portfolio-grid */
+  .portfolio-grid  {
+    grid-template-columns: repeat(2, 1fr); 
+    justify-items: center;
   }
 
-  .about__project-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  .partners-grid{
+    grid-template-columns: repeat(2, 1fr); 
+    justify-items: center;
+    
 }
 
 @media screen and (max-width: 760px) {
@@ -236,6 +338,23 @@
   .about__info__grid {
     grid-template-columns: repeat(1, 1fr);
   }
+
+  .portfolio-grid  {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+  }
+  .portfolio-grid  {
+    grid-template-columns: repeat(1, 1fr); 
+    justify-items: center;
+  }
+
+
+  .partners-grid{
+    grid-template-columns: repeat(1, 1fr); 
+    justify-items: center;
+    
+}
 }
 
 @media screen and (max-width: 380px) {
@@ -243,4 +362,5 @@
     font-size: 46px;
     line-height: 64;
   }
+}
 }
