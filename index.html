@@ -4,19 +4,32 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/materialize_optimize.css">
     <link rel="stylesheet" href="CSS/index.css">
     <title>Проекты России</title>
 </head>
 <body>
+
+
+<ul id="slide-out" class="sidenav">
+    <li><a href="#!"><i class="material-icons">home</i>Главная</a></li>
+    <li><a href="#!"><i class="material-icons">people</i>О нас</a></li>
+    <li><a href="#!"><i class="material-icons">grade</i>Услуги</a></li>
+    <li><a href="#!"><i class="material-icons">phone</i>Контакты</a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="sidenav-close" href="#!"><i class="material-icons">close</i>Закрыть</a></li>
+</ul>
+
 <header class="header">
     <div class="container">
         <div class="header__title">
             <img class="logo" src="img/logo.svg" alt="logo"/>
-            <button class="burger">
+            <a href="#" data-target="slide-out" class="burger sidenav-trigger">
                 <span class="burger__line"></span>
                 <span class="burger__line"></span>
                 <span class="burger__line"></span>
-            </button>
+            </a>
         </div>
         <h1 class="header__main__title">
             реализуем крупнейшие проекты в России
@@ -100,6 +113,24 @@
     </div>
 </section>
 
+<!-- Modal Structure -->
+<div id="modal2" class="modal">
+    <div class="modal-content">
+        <h4>Самные умные проекты</h4>
+        <p>Банальные, но неопровержимые выводы, а также сделанные на базе интернет-аналитики выводы
+            ассоциативно распределены по отраслям. Внезапно, явные признаки победы институционализации
+            представлены в исключительно положительном свете. Прежде всего, убеждённость некоторых оппонентов
+            предопределяет высокую востребованность модели развития.
+        </p>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Закрыть</a>
+    </div>
+</div>
+
+
+
+
 <!-- Лента -->
 <section class="request">
     <div class="container">
@@ -110,10 +141,10 @@
             </div>
 
             <div class="request__flex-right">
-                <button class="request_btn">
+                <a href="#modal2" class="request_btn modal-trigger">
                     <img src="img/email-icon.svg" alt="иконка эл.почты" class="mail-icon">
                     Ваш запрос
-                </button>
+                </a>
             </div>
         </div>
     </div>
@@ -157,37 +188,38 @@
 
     </div>
 </section>
+
 <section class="portfolio">
     <div class="portfolio-grid">
         <div class="portfolio-gid-item">
-            <img src="img/portfolio.png" alt="Portfolio" class="photo__portfolio">
+            <img src="img/portfolio.png" alt="Portfolio" class="photo__portfolio materialboxed">
         </div>
         <div class="portfolio-gid-item">
-            <img src="img/portfolio.png" alt="Portfolio" class="photo__portfolio">
+            <img src="img/portfolio.png" alt="Portfolio" class="photo__portfolio materialboxed">
         </div>
         <div class="portfolio-gid-item">
-            <img src="img/portfolio.png" alt="Portfolio" class="photo__portfolio">
+            <img src="img/portfolio.png" alt="Portfolio" class="photo__portfolio materialboxed">
         </div>
         <div class="portfolio-gid-item">
-            <img src="img/portfolio.png" alt="Portfolio" class="photo__portfolio">
+            <img src="img/portfolio.png" alt="Portfolio" class="photo__portfolio materialboxed">
         </div>
         <div class="portfolio-gid-item">
-            <img src="img/portfolio.png" alt="Portfolio" class="photo__portfolio">
+            <img src="img/portfolio.png" alt="Portfolio" class="photo__portfolio materialboxed">
         </div>
         <div class="portfolio-gid-item">
-            <img src="img/portfolio.png" alt="Portfolio" class="photo__portfolio">
+            <img src="img/portfolio.png" alt="Portfolio" class="photo__portfolio materialboxed">
         </div>
         <div class="portfolio-gid-item">
-            <img src="img/portfolio.png" alt="Portfolio" class="photo__portfolio">
+            <img src="img/portfolio.png" alt="Portfolio" class="photo__portfolio materialboxed">
         </div>
         <div class="portfolio-gid-item">
-            <img src="img/portfolio.png" alt="Portfolio" class="photo__portfolio">
+            <img src="img/portfolio.png" alt="Portfolio" class="photo__portfolio materialboxed">
         </div>
         <div class="portfolio-gid-item">
-            <img src="img/portfolio.png" alt="Portfolio" class="photo__portfolio">
+            <img src="img/portfolio.png" alt="Portfolio" class="photo__portfolio materialboxed">
         </div>
         <div class="portfolio-gid-item">
-            <img src="img/portfolio.png" alt="Portfolio" class="photo__portfolio">
+            <img src="img/portfolio.png" alt="Portfolio" class="photo__portfolio materialboxed">
         </div>
     </div>
 </section>
@@ -195,45 +227,45 @@
     <div class="container">
         <h4 class="text-h2 title__h2">ответы на вопросы</h4>
         <div class="question__items">
-            <div class="question-item">
-                <div class="text-h3 question__text-h3 clouse">Работаете ли вы по 249 ФЗ?</div>
+            <details class="question-item">
+                <summary class="text-h3 question__text-h3">Работаете ли вы по 249 ФЗ?</summary>
                 <p class="text-p question__text-p">Lorem Ipsum - это текст-"рыба", часто используемый в печати и
                     вэб-дизайне.
                     Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
                     В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов,
                     используя Lorem Ipsum для распечатки образцов.
                 </p>
-            </div>
+            </details>
 
-            <div class="question-item">
-                <div class="text-h3 question__text-h3 open">Работаете ли вы по 249 ФЗ?</div>
+            <details class="question-item">
+                <summary class="text-h3 question__text-h3">Работаете ли вы по 249 ФЗ?</summary>
                 <p class="text-p question__text-p">Lorem Ipsum - это текст-"рыба", часто используемый в печати и
                     вэб-дизайне.
                     Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
                     В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов,
                     используя Lorem Ipsum для распечатки образцов.
                 </p>
-            </div>
+            </details>
 
-            <div class="question-item">
-                <div class="text-h3 question__text-h3  clouse">Работаете ли вы по 249 ФЗ?</div>
+            <details class="question-item">
+                <summary class="text-h3 question__text-h3">Работаете ли вы по 249 ФЗ?</summary>
                 <p class="text-p question__text-p">Lorem Ipsum - это текст-"рыба", часто используемый в печати и
                     вэб-дизайне.
                     Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
                     В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов,
                     используя Lorem Ipsum для распечатки образцов.
                 </p>
-            </div>
+            </details>
 
-            <div class="question-item">
-                <div class="text-h3 question__text-h3 clouse">Работаете ли вы по 249 ФЗ?</div>
+            <details class="question-item">
+                <summary  class="text-h3 question__text-h3">Работаете ли вы по 249 ФЗ?</summary>
                 <p class="text-p question__text-p">Lorem Ipsum - это текст-"рыба", часто используемый в печати и
                     вэб-дизайне.
                     Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
                     В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов,
                     используя Lorem Ipsum для распечатки образцов.
                 </p>
-            </div>
+            </details>
         </div>
     </div>
 </section>
@@ -319,7 +351,26 @@
 </section>
 
 
-  <section class="request">
+
+<!-- Modal Structure -->
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <h4>Заголовок</h4>
+        <p>Банальные, но неопровержимые выводы, а также сделанные на базе интернет-аналитики выводы
+            ассоциативно распределены по отраслям. Внезапно, явные признаки победы институционализации
+            представлены в исключительно положительном свете. Прежде всего, убеждённость некоторых оппонентов
+            предопределяет высокую востребованность модели развития. Не следует, однако, забывать, что повышение
+            уровня гражданского сознания способствует подготовке и реализации укрепления моральных ценностей.
+            Принимая во внимание показатели успешности, постоянный количественный рост и сфера нашей активности
+            обеспечивает актуальность новых предложений.
+        </p>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Закрыть</a>
+    </div>
+</div>
+
+<section class="request">
     <div class="container">
       <div class="request_flex">
         <div class="request__flex-left">
@@ -328,12 +379,12 @@
         </div>
 
         <div class="request__flex-right">
-          <button class="request_btn">
+          <a href="#modal1" class="request_btn modal-trigger">
             <img src="img/email-icon.svg" alt="иконка эл.почты" class="mail-icon">
             Ваш запрос
-          </button>
-        </div>
+          </a>
       </div>
+    </div>
     </div>
   </section>
 
@@ -350,7 +401,11 @@
                     <div class="contact__grid-item">
                         <img src="img/telephone.svg" alt="telephone" class="contact__icon">
                         <div class="text-h3 contact__address__title">Телефон:</div>
-                        <div class="text-h3  contact__address">8 (812) 111-22-33 <p>8 (812) 111-22-33</p> </div>
+                        <h3 class="text-h3">
+                            <a href="tel:8 (812) 111-22-33">8 (812) 111-22-33</a>
+                            <br>
+                            <a href="tel:8 (812) 111-22-33">8 (812) 111-22-33</a>
+                        </h3>
                     </div>
 
                     <div class="contact__grid-item">
@@ -362,7 +417,7 @@
                     <div class="contact__grid-item">
                         <img src="img/geo.svg" alt="email" class="contact__icon">
                         <div class="text-h3 contact__address__title">Адрес:</div>
-                        <div class="text-h3  contact__address"><span class="contact__email">info@vip.ru</span></div>
+                        <div class="text-h3  contact__address"><a href="mailto:info@vip.ru"><span class="contact__email">info@vip.ru</span></a> </div>
                     </div>
 
                 </div>
@@ -376,6 +431,7 @@
                 </div>
             </div>
         </footer>
-
+        <script type="text/javascript"  src="JS/materialize.min.js"></script>
+        <script type="text/javascript"  src="JS/main.js"></script>
 </body>
 </html>
